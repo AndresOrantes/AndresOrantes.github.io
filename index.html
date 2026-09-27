@@ -176,20 +176,26 @@
         <h2 class="section-title">Projects</h2>
 
         <div class="projects-box">
-
-            <!--PROYECTO 1-->
+            
+            <!-- PROJECT 1: Spotify Track Predictor (WIP) -->
             <div class="project-card" onclick="openModal(this)">
                 <i class="fa-solid fa-music project-icon"></i>
                 <h3>Spotify Track Predictor</h3>
-                <p> Regression model for popularity prediction</p>
-                <span class="click'text">Click for details</span>
+                <p>Regression model for song popularity prediction.</p>
+                <span class="click-text">Click for details</span>
 
-                <!--oculto-->
+                <!-- Contenido Oculto -->
                 <div class="project-details" style="display: none;">
-                    <img src="Imagenes\placeholder.png" alt="Spotify Project" onerror="this.src='https://via.placeholder.com/400x300?text=Spotify+Project'">
+                    
+                    <!-- Imagen comentada como solicitaste -->
+                    <!-- <img src="Imagenes/spotify_project.png" alt="Spotify Project" onerror="this.src='https://via.placeholder.com/400x300?text=Spotify+Project'"> -->
+                    
+                    <!-- Ícono de reemplazo para el interior del modal -->
+                    <i class="fa-solid fa-music" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
+                    
                     <div class="details-content">
-                        <h3>Spotify Track Popularity Predicto</h3>
-                        <p>Proyecto de Machine Learning supervisado utilizando datos tabulares (características de audio) para predecir la popularidad de las canciones en Spotify. Se implementaron modelos de regresión y se analizó la información utilizando herramientas de perfilado de datos.</p>
+                        <h3>Spotify Track Popularity Predictor</h3>
+                        <p><strong>[Work in Progress]</strong> Supervised Machine Learning project using tabular audio features to predict song popularity on Spotify. The pipeline includes exploratory data analysis with profiling tools and the implementation of regression models.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Scikit-Learn</span>
@@ -197,25 +203,27 @@
                             <span class="tech-tag">Pandas</span>
                         </div>
                         <div class="btn-group">
-                            <a href="#" target="_blank" class="btn">Github Repo</a>
-                            <a href="#" target="_blank" class="btn">View PDF</a>
+                            <a href="https://github.com/AndresOrantes/Spotify-Ranking-Prediction" target="_blank" class="action-link">GitHub Repo</a>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!--PROYECTO 2-->
+            
+            <!-- PROJECT 2: LLM RAG for CVs (WIP) -->
             <div class="project-card" onclick="openModal(this)">
                 <i class="fa-solid fa-file-pdf project-icon"></i>
                 <h3>LLM RAG for CVs</h3>
-                <p>Sistema de búsqueda inteligente para currículums.</p>
+                <p>Intelligent resume search and extraction system.</p>
                 <span class="click-text">Click for details</span>
                 
                 <div class="project-details" style="display: none;">
-                    <img src="Imagenes/rag_project.png" alt="RAG Project" onerror="this.src='https://via.placeholder.com/400x300?text=RAG+Project'">
+
+                    <i class="fa-solid fa-file-pdf project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
+                    <!--IMAGEN DEL PROYECTO COMENTADA-->
+                    <!-- <img src="Imagenes/rag_project.png" alt="RAG Project" onerror="this.src='https://via.placeholder.com/400x300?text=RAG+Project'"> -->
                     <div class="details-content">
                         <h3>Retrieval-Augmented Generation for CVs</h3>
-                        <p>Desarrollo de un sistema RAG que procesa documentos (Curriculum Vitae), genera embeddings y los almacena en una base de datos vectorial. Esto permite realizar consultas en lenguaje natural a través de un LLM para extraer información clave de los candidatos de forma automatizada.</p>
+                        <p><strong>[Work in Progress]</strong> RAG system designed to process resumes, generate embeddings, and store them in a vector database. It enables natural language querying through an LLM to automatically extract and summarize key candidate information.</p>
                         <div class="tech-stack">
                             <span class="tech-tag">LLMs</span>
                             <span class="tech-tag">Vector DB</span>
@@ -223,53 +231,131 @@
                             <span class="tech-tag">NLP</span>
                         </div>
                         <div class="btn-group">
-                            <a href="#" target="_blank" class="btn">GitHub Repo</a>
+                            <a href="#" target="_blank" class="action-link">GitHub Repo</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PROYECTO 3 -->
+            <!-- PROJECT: TCA Software Solutions (PRIVADO / NDA) -->
             <div class="project-card" onclick="openModal(this)">
-                <i class="fa-solid fa-chart-line project-icon"></i>
-                <h3>Proyecto 3</h3>
-                <p>Breve descripción del tercer proyecto.</p>
+                <i class="fa-solid fa-hotel project-icon"></i>
+                <h3>Hotel Occupancy ML</h3>
+                <p>End-to-end LSTM model and Azure cloud deployment.</p>
                 <span class="click-text">Click for details</span>
                 
                 <div class="project-details" style="display: none;">
-                    <img src="Imagenes/placeholder.png" alt="Project 3" onerror="this.src='https://via.placeholder.com/400x300?text=Project+3'">
+
+                    <i class="fa-solid fa-hotel project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
+                    <!-- IMAGEN DEL PROYECTO-->
+                    <!--<img src="Imagenes/placeholder.png" alt="TCA Software Solutions" onerror="this.src='https://via.placeholder.com/400x300?text=TCA+Software+Solutions'">-->
                     <div class="details-content">
-                        <h3>Título Largo del Proyecto 3</h3>
-                        <p>Descripción detallada de tu tercer proyecto. Explica el problema, la solución arquitectónica y los resultados de negocio o técnicos que lograste.</p>
+                        <h3>Hotel Occupancy Predictor (TCA Software Solutions)</h3>
+                        <p>End-to-end mathematical engineering project to estimate hotel room occupancy. Executed comprehensive data governance and EDA (confirming time-series stationarity via Augmented Dickey-Fuller). Built a robust <strong>LSTM Recurrent Neural Network</strong> with Huber Loss and Layer Normalization using PyTorch. The workflow was automated via <strong>Kedro</strong>, containerized with <strong>Docker</strong>, and deployed as a real-time inference endpoint on <strong>Azure Container Apps</strong>.</p>
                         <div class="tech-stack">
-                            <span class="tech-tag">Tecnología 1</span>
-                            <span class="tech-tag">Tecnología 2</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Azure</span>
+                            <span class="tech-tag">Kedro</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Streamlit</span>
                         </div>
                         <div class="btn-group">
-                            <a href="#" target="_blank" class="btn">GitHub Repo</a>
+                            <!-- Botón inactivo visualmente para indicar que es privado por NDA -->
+                            <span class="action-link" style="opacity: 0.5; cursor: not-allowed; border-color: rgba(255,255,255,0.2);">
+                                <i class="fa-solid fa-lock" style="margin-right: 0.5rem;"></i>Private Repository (NDA)
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- PROYECTO 4 (Oculto por defecto) -->
+
+            <!-- PROJECT: Framework-less ML (COMPLETADO) -->
             <div class="project-card hidden-project" onclick="openModal(this)">
-                <i class="fa-solid fa-database project-icon"></i>
-                <h3>Proyecto 4</h3>
-                <p>Breve descripción del cuarto proyecto.</p>
+                <i class="fa-solid fa-book project-icon"></i>
+                <h3>Framework-less ML</h3>
+                <p>Custom ML algorithms for academic and demographic prediction.</p>
                 <span class="click-text">Click for details</span>
+                
                 <div class="project-details" style="display: none;">
-                    <img src="Imagenes/placeholder.png" alt="" onerror="this.src='https://via.placeholder.com/400x300'">
+
+                    <i class="fa-solid fa-hotel project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
+                    <!--IMAGEN DEL PROYECTO-->
+                    <!--<img src="Imagenes/placeholder.png" alt="ML from scratch" onerror="this.src='https://via.placeholder.com/400x300?text=ML+From+Scratch'">-->
                     <div class="details-content">
-                        <h3>Título Largo 4</h3>
-                        <p>Descripción extensa.</p>
-                        <div class="tech-stack"><span class="tech-tag">SQL</span></div>
-                        <div class="btn-group"><a href="#" target="_blank" class="btn">GitHub Repo</a></div>
+                        <h3>Framework-less ML & GPA Predictor</h3>
+                        <p>Implementation of Machine Learning techniques entirely from scratch without relying on high-level frameworks. It includes a custom interactive script (<code>GPAPredicyourGrade</code>) to estimate student GPA and a gender classification model. The project highlights a deep understanding of core mathematical mechanics, feature influence, and model performance evaluation based on data distribution constraints.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Mathematics</span>
+                            <span class="tech-tag">Algorithms</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://github.com/AndresOrantes/Portafolio_1_Mod2" target="_blank" class="action-link">GitHub Repo</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Agrega más proyectos aquí si lo deseas, asegurándote de ponerles la clase "hidden-project" -->
+
+
+
+            <!-- PROJECT 4: Titanic ML Predictor (COMPLETADO / Oculto por defecto) -->
+            <div class="project-card hidden-project" onclick="openModal(this)">
+                <i class="fa-solid fa-ship project-icon"></i>
+                <h3>Titanic Predictor</h3>
+                <p>Survival prediction using classification models.</p>
+                <span class="click-text">Click for details</span>
+
+                
+                <div class="project-details" style="display: none;">
+                    <i class="fa-solid fa-ship project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
+                    <!--IMAGEN DEL PROYECTO-->
+                    <!--<img src="Imagenes/placeholder.png" alt="Titanic ML" onerror="this.src='https://via.placeholder.com/400x300?text=Titanic+Project'">-->
+                    <div class="details-content">
+                        <h3>Titanic Survival Prediction</h3>
+                        <p>End-to-end Machine Learning project aimed at predicting passenger survival on the Titanic. The workflow involves extensive Exploratory Data Analysis (EDA), feature engineering, and the training of classification algorithms.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">EDA</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://github.com/AndresOrantes/Reto_Titanic_Equipo5" target="_blank" class="action-link">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PROJECT 6: Olympics Stats Tool (COMPLETADO / Oculto por defecto) -->
+            <div class="project-card hidden-project" onclick="openModal(this)">
+                <i class="fa-solid fa-medal project-icon"></i>
+                <h3>Olympics Query Tool</h3>
+                <p>Python script for historical statistics extraction.</p>
+                <span class="click-text">Click for details</span>
+                
+                <div class="project-details" style="display: none;">
+
+                    <i class="fa-solid fa-medal project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
+                    <!--IMAGEN DEL PROYECTO-->
+                    <!--<img src="Imagenes/placeholder.png" alt="Olympics" onerror="this.src='https://via.placeholder.com/400x300?text=Olympics+Stats'">-->
+                    <div class="details-content">
+                        <h3>Olympics Statistics Query System</h3>
+                        <p>A Python-based scripting tool designed to query, extract, and analyze historical statistics from the Olympic Games. Built to facilitate efficient data retrieval and automated statistical processing.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Data Analysis</span>
+                            <span class="tech-tag">Scripting</span>
+                        </div>
+                        <div class="btn-group">
+                            <a href="https://github.com/AndresOrantes/Olimpiadas_PS" target="_blank" class="action-link">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
         </div>
 
         <button id="seeMoreBtn" class="btn see-more-btn">See More Projects</button>
@@ -407,6 +493,42 @@
                 <p class="card-desc">Introduction to MLOps Concepts which includes data versioning and machine learning models life cycle.</p>
                 <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/5a491f2ee258997cf2262eb4000d23eac7183b1e" target="_blank" class="action-link">View Certificate</a>
             </div>
+
+
+            <!-- TARJETAS DE CERTIFICADOS TEC -->
+            <div class="editorial-card">
+                <div class="card-meta">
+                    <span class="meta-year">2025</span>
+                    <span class="meta-type type-cert">CERTIFICATION</span>
+                </div>
+                <h3 class="card-title">Certificado de Alta Especialidad: Ciencia de datos</h3>
+                <div class="card-issuer">Tecnológico de Monterrey</div>
+                <p class="card-desc">The participant acquires abilities to become a Data Scientist. Leverages the volume of information generated regarding the company for better decision-making and strategic improvement.</p>
+                <a href="https://www.credential.net/f8933002-7aed-452a-bb8f-de41ee853532#acc.wlV3z5Sx" target="_blank" class="action-link">View Credential</a>
+            </div>
+
+            <div class="editorial-card">
+                <div class="card-meta">
+                    <span class="meta-year">2025</span>
+                    <span class="meta-type type-cert">CERTIFICATION</span>
+                </div>
+                <h3 class="card-title">Certificado de Alta Especialidad: Visualización de datos</h3>
+                <div class="card-issuer">Tecnológico de Monterrey</div>
+                <p class="card-desc">The participant uses best practices to present information and knowledge to decision takers using a visualization tool.</p>
+                <a href="https://www.credential.net/7939ff86-ce90-4b25-a473-337e916a4311#acc.CtnFbmf7" target="_blank" class="action-link">View Credential</a>
+            </div>
+
+            <div class="editorial-card">
+                <div class="card-meta">
+                    <span class="meta-year">2025</span>
+                    <span class="meta-type type-cert">CERTIFICATION</span>
+                </div>
+                <h3 class="card-title">Certificado de Alta Especialidad: Inteligencia artificial y aprendizaje automático</h3>
+                <div class="card-issuer">Tecnológico de Monterrey</div>
+                <p class="card-desc">The participant applies the principal Machine Learning related techniques in real life problems.</p>
+                <a href="https://www.credential.net/031468e9-cc11-45fc-adf7-621b13690e31#acc.EIir3RYH" target="_blank" class="action-link">View Credential</a>
+            </div>
+
 
             <!-- TARJETA 3 -->
             <!--
