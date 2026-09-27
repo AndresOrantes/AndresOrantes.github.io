@@ -783,16 +783,33 @@ section{
     .home h3{
         font-size: 1.5rem;
     }
+    .about-me {
+        padding-top: 8rem;
+        padding-bottom: 4rem;
+    }
     .about-me .about-container{
         flex-direction: column;
-        text-align: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 1.5rem;
     }
-    .about-me img, .about-container{
+    .about-me img {
+        width: 80vw;
+        max-width: 280px;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+    .about-content {
         width: 100%;
     }
     .about-content p{
-        text-align: center;
+        width: 100%;
+        text-align: left;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        padding: 0;
     }
+    
     .grid{
         grid-template-columns: repeat(1,1fr);
     }
