@@ -114,8 +114,8 @@ section{
     align-items: center;
     justify-content: center;
     margin: 0;
-
 }
+
 .info-box{
     display: flex;
     flex-direction: column;
@@ -132,11 +132,11 @@ section{
     white-space: nowrap;
 }
 .home-description{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #e2e8f0;
     line-height: 1.6;
-    margin-top: -0.5rem;
-    margin-bottom: 1rem;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
 }
 .info-box h3{
     font-size: 1.8rem;
@@ -221,9 +221,10 @@ section{
     flex-direction: column;
 }
 .about-content p{
-    font-size: 1.6rem;
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.6;
     text-align: left;
+    margin-bottom: 1.5rem;
     color: #e2e8f0;
 }
 .section-title{
