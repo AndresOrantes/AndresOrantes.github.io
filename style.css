@@ -732,22 +732,32 @@ section{
     white-space: nowrap;
 }
 
-.track-course-list .track-course-extra {
+.track-course-list li.track-course-extra {
     display: none;
 }
 
-.track-courses.is-expanded .track-course-list .track-course-extra {
+.track-courses.is-expanded .track-course-list li.track-course-extra {
     display: flex;
+}
+
+.track-courses:not(.is-expanded) .track-course-list li:nth-child(3) {
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .track-courses-toggle {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
+    width: 100%;
     margin-top: 0.75rem;
-    padding: 0;
+    padding: 0.7rem 0 0;
     background: transparent;
     border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: inherit;
     color: #38bdf8;
     font-size: 0.82rem;
     font-weight: 500;
