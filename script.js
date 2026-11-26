@@ -43,3 +43,22 @@ window.onclick = function(event) {
         closeModal();
     }
 }
+
+// Lógica de "See more" para cursos dentro de tracks (Educación Continua)
+const trackCourseToggles = document.querySelectorAll('.track-courses-toggle');
+
+trackCourseToggles.forEach(toggleBtn => {
+    toggleBtn.addEventListener('click', () => {
+        const trackCourses = toggleBtn.closest('.track-courses');
+        const extraCount = trackCourses.querySelectorAll('.track-course-extra').length;
+        const isExpanded = trackCourses.classList.toggle('is-expanded');
+
+        toggleBtn.setAttribute('aria-expanded', String(isExpanded));
+        const labelSpan = toggleBtn.querySelector('.toggle-text');
+        if (labelSpan) {
+            labelSpan.textContent = isExpanded
+                ? 'Show fewer courses'
+                : `See ${extraCount} more courses`;
+        }
+    });
+});

@@ -697,9 +697,32 @@ section{
     border-bottom: none;
 }
 
-.track-course-name {
+.track-course-list .track-course-link {
     font-weight: 500;
     color: #e2e8f0;
+    transition: color 0.2s ease;
+}
+
+.track-course-list .track-course-link::before {
+    display: none;
+}
+
+.track-course-list .track-course-link::after {
+    content: ' \2197';
+    font-size: 0.78em;
+    color: #38bdf8;
+    opacity: 0.65;
+    transition: opacity 0.2s ease;
+}
+
+.track-course-list .track-course-link:hover {
+    color: #38bdf8;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.track-course-list .track-course-link:hover::after {
+    opacity: 1;
 }
 
 .track-course-hours {
@@ -707,6 +730,46 @@ section{
     font-size: 0.78rem;
     color: #94a3b8;
     white-space: nowrap;
+}
+
+.track-course-list .track-course-extra {
+    display: none;
+}
+
+.track-courses.is-expanded .track-course-list .track-course-extra {
+    display: flex;
+}
+
+.track-courses-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.75rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #38bdf8;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.track-courses-toggle:hover {
+    color: #ffffff;
+}
+
+.track-courses-toggle i {
+    font-size: 0.7rem;
+    transition: transform 0.2s ease;
+}
+
+.track-courses.is-expanded .track-courses-toggle i {
+    transform: rotate(180deg);
+}
+
+.editorial-grid:has(.track-courses.is-expanded) .editorial-card:has(.track-courses) {
+    align-self: start;
 }
 
 .editorial-card .action-link {
