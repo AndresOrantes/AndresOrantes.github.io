@@ -408,6 +408,8 @@ section{
     border-radius: 1.5rem;
     width: 90%;
     max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
     position: relative;
     padding: 3rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -953,9 +955,13 @@ section{
     .experience-info img{
         width: 70vw;
     }
+    .modal-box {
+        padding: 2rem 1.5rem;
+    }
     .modal-body {
         flex-direction: column;
         text-align: center;
+        gap: 1.5rem;
     }
     .modal-body img{
         width: 100%;
