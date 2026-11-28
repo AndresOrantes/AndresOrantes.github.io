@@ -2,738 +2,1022 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-    content="width=device-width,
-    initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" href="style.css?v=3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Andrés Orantes — Data Scientist & ML Engineer specializing in Data Science, Data Engineering, Machine Learning, and MLOps.">
+    <title>Andrés Orantes | Data Scientist &amp; ML Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
-    <header class="header">
-        <a href="#home" class="logo"><span>Andrés Orantes</span></a>
-        
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
+    <!-- =========================================================
+         FIXED TOP NAVIGATION BAR
+         ========================================================= -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-slash" aria-hidden="true"></span>
+                <span class="logo-text">Andrés <span class="logo-accent">Orantes</span></span>
+            </a>
 
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
+            <nav class="desktop-nav" aria-label="Primary Navigation">
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-item" data-nav="about">About</a></li>
+                    <li><a href="#experience" class="nav-item" data-nav="experience">Experience</a></li>
+                    <li><a href="#projects" class="nav-item" data-nav="projects">Projects</a></li>
+                    <li><a href="#education" class="nav-item" data-nav="education">Education</a></li>
+                    <li><a href="#continuined" class="nav-item" data-nav="continuined">Continuing Ed</a></li>
+                    <li><a href="#contact" class="nav-item" data-nav="contact">Contact</a></li>
+                </ul>
+            </nav>
 
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
+            <div class="header-actions">
+                <a href="https://github.com/AndresOrantes" target="_blank" rel="noopener noreferrer" class="btn btn--compact header-github">
+                    Visit GitHub <span aria-hidden="true">&#8599;</span>
+                </a>
 
-            <li>
-                <a href="#education">Education</a>
-            </li>
-
-            <li>
-                <a href="#continuined">Continuing Education</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
-
-        </ul>
-        
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <a href="https://github.com/AndresOrantes" target="_blank" class="visit-btn">Visit Github</a>
-
+                <button type="button" id="menuToggleBtn" class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
     </header>
 
-<!-- SECCIÓN 1: HOME  -->
-    <section id="home" class="home">
-        <div class="home-container">
-            <div class="info-box">
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Andrés Orantes</h1>
-                    <span>Data Scientist</span>
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation">
+        <nav class="mobile-nav-list">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#education" class="mobile-nav-link">Education</a>
+            <a href="#continuined" class="mobile-nav-link">Continuing Education</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <a href="https://github.com/AndresOrantes" target="_blank" rel="noopener noreferrer" class="mobile-nav-link mobile-nav-link--accent">Visit GitHub &#8599;</a>
+        </nav>
+    </div>
+
+    <main class="page-content">
+
+        <!-- =========================================================
+             SECTION 1: HERO
+             ========================================================= -->
+        <section id="home" class="hero">
+            <div class="hero-plane hero-plane--left" aria-hidden="true"></div>
+            <div class="hero-plane hero-plane--right" aria-hidden="true"></div>
+            <div class="hero-slash hero-slash--upper" aria-hidden="true"></div>
+            <div class="hero-slash hero-slash--lower" aria-hidden="true"></div>
+
+            <div class="hero-inner">
+                <p class="hero-kicker">Hi, I'm</p>
+                <h1 class="hero-name">Andrés Orantes</h1>
+
+                <div class="hero-role-wrap">
+                    <p class="hero-role-plate">
+                        <span>Data Scientist / ML Engineer</span>
+                    </p>
                 </div>
 
-                <!-- BREVE PRESENTACIÓN -->
-                <p class="home-description">
-                    Specializing in Data Science, Data Engineering, Machine Learning and Applied AI. Focused on expanding my technical learning and architecting modern data solutions.
+                <p class="hero-description">
+                    Specializing in <strong>Data Science</strong>, <strong>Data Engineering</strong>, <strong>Machine Learning</strong>, and <strong>Applied AI</strong>. Focused on expanding my technical learning and architecting modern data solutions.
                 </p>
 
-                <div class="btn-group">
-                    <a href="documentos/JAOG_CV_EN.pdf", target="_blank" class="btn">Download CV</a>
-
-                    <a href="#contact" class="btn">Contact</a>
+                <div class="hero-actions">
+                    <a href="documentos/JAOG_CV_EN.pdf" target="_blank" rel="noopener noreferrer" class="btn">
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn btn--secondary">
+                        Contact <span aria-hidden="true">&rarr;</span>
+                    </a>
                 </div>
 
                 <div class="socials">
-                    <a href="https://github.com/AndresOrantes" target="_blank">
-                        <i class="fa-brands fa-square-github"></i>
+                    <a href="https://github.com/AndresOrantes" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub Profile" title="GitHub">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/andres-orantes/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/andres-orantes/" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn Profile" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
 
+            <a href="#about" class="scroll-cue" aria-label="Scroll to About Me">
+                <span>Scroll</span>
+                <span class="scroll-cue-line" aria-hidden="true"></span>
+            </a>
+        </section>
 
-<!-- SECCIÓN: ABOUT ME -->
-    <section id="about" class="about-me">
-        <h2 class="section-title">About Me</h2>
-        
-        <div class="about-container">
-            <img src="Imagenes/fotoabout.jpeg" alt="Andrés Orantes">
-            
-            <div class="about-content">
-                <p>
-                    I'm a Data Science and Mathematics engineer specialized in end-to-end data processing, analytics, and Machine Learning. With experience constructing efficient data pipelines and predictive models using Python, Pandas and Scikit-Learn. 
-                    <br><br>
-                    I am constantly deepening my technical expertise by developing scalable, data-driven solutions. 
-                </p>
-            </div>
-        </div>
-    </section>
+        <div class="section-divider" aria-hidden="true"></div>
 
-    <!--Experiencia-->
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
+        <!-- =========================================================
+             SECTION 2: ABOUT ME
+             ========================================================= -->
+        <section id="about" class="section">
+            <div class="container container--medium">
+                <h2 class="section-heading">
+                    <span class="section-heading-slash" aria-hidden="true"></span>
+                    About Me
+                </h2>
 
-        <div class="experience-info">
-            <div class="grid">
-
-                <!--TRABAJO 1-->
-                <div class="grid-card">
-                    <div class="card-icons">
-                        <i class="fa-solid fa-code"></i>
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <span class="job-title">Data Analyst / Data Engineer</span>
-                    <h3 class="job-date">Since June 2025</h3>
-
-                    <!-- Bullets de Descripcion-->
-                    <ul class="job-description">
-                        <li>Design and build robust data pipelines using apache Airflow to feed the company's Dremio's Data Lake.</li>
-                        <li>Optimize data extraction and transformation workflows.</li>
-                        <li>Migrated SQL queries to Python to run them on AWS Lambda, improving efficiency and maintainability</li>
-                        <li>Tuning Machine Learning regression model, Prophet, to generate better demand forecasts. </li>
-                    </ul>
-
-                    <div class="tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">Apache Airflow</span>
-                        <span class="tech-tag">AWS Lambda</span>
-                        <span class="tech-tag">AWS S3</span>
-                        <span class="tech-tag">Dremio</span>
-                        <span class="tech-tag">DataHub</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Prophet</span>
-                        <span class="tech-tag">ETL</span>
-                    </div>
-                    
-                </div>
-
-                <!--TRABAJO 2-->
-                <div class="grid-card">
-                    <div class="card-icons">
-                        <i class="fa-solid fa-code"></i>
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-                    <span class="job-title">Data Analyst</span>
-                    <h3 class="job-date">From August 2023 to June 2025</h3>
-
-                    <!-- Bullets de Descripcion-->
-                    <ul class="job-description">
-                        <li>Management and analysis of large-scale databases using Excel and SAP.</li>
-                        <li>Generated key reports on payroll, recruitment, organizational structure and academic profiles.</li>
-                        <li>Automated excel reports with VBA scripting</li>
-                        <li>Optimized Google Looker Studio dashboards.</li>
-                    </ul>
-
-                    <div class="tech-stack">
-                        <span class="tech-tag">Excel</span>
-                        <span class="tech-tag">SAP</span>
-                        <span class="tech-tag">Looker Studio</span>
-                        <span class="tech-tag">VBA</span>
-                        <span class="tech-tag">Data Analysis</span>
-                    </div>
-                    
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!--PROYECTOS-->
-    <section id="projects" class="projects">
-
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects-box">
-
-            <!-- PROJECT: MiBici MLOps Platform (COMPLETADO) -->
-            <div class="project-card" onclick="openModal(this)">
-                <i class="fa-solid fa-bicycle project-icon"></i>
-                <h3>MiBici MLOps Platform</h3>
-                <p>End-to-end MLOps pipeline for bike-share demand forecasting and serving.</p>
-                <span class="click-text">Click for details</span>
-
-                <div class="project-details" style="display: none;">
-                    <i class="fa-solid fa-bicycle project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
-
-                    <div class="details-content">
-                        <h3>MiBici End-to-End MLOps Platform</h3>
-                        <p>End-to-end MLOps capstone project built on 24 months of open mobility data from Guadalajara's <strong>MiBici</strong> bike-sharing system (<strong>9M+ trips</strong>, <strong>6.6M+ hourly station records</strong>, and <strong>472 station profiles</strong>). Built reproducible Parquet pipelines with <strong>SHA-256 data versioning</strong> and trained models across three tasks: hourly demand forecasting (<strong>Random Forest</strong> &amp; <strong>LinearSVR</strong>), station rebalancing risk classification, and station usage segmentation (<strong>K-Means</strong> &amp; <strong>GMM</strong>), with experiment tracking, nested hyperparameter search, and <strong>Champion/Challenger A/B testing</strong> in <strong>MLflow</strong>.</p>
-                        <p>Automated data integrity and drift monitoring using <strong>DeepChecks</strong> and <strong>Evidently</strong>, alongside <strong>Pytest</strong> test suites and <code>pip-audit</code> security audits. Deployed real-time inference endpoints with <strong>FastAPI</strong> and <strong>Pydantic</strong>, containerized via <strong>Podman</strong> and <strong>Docker Compose</strong>, load-tested with <strong>Locust</strong> (up to 250 concurrent users and 121 req/s with 0% errors across 4 workers), and evaluated with a <strong>FinOps</strong> cloud cost analysis comparing AWS EC2 and Google Cloud Run.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">MLflow</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">FastAPI</span>
-                            <span class="tech-tag">Podman</span>
-                            <span class="tech-tag">Docker Compose</span>
-                            <span class="tech-tag">DeepChecks</span>
-                            <span class="tech-tag">Evidently</span>
-                            <span class="tech-tag">Locust</span>
-                            <span class="tech-tag">Pytest</span>
-                            <span class="tech-tag">uv</span>
+                <div class="about-layout">
+                    <div class="portrait-stage">
+                        <div class="portrait-frame">
+                            <img src="Imagenes/fotoabout.jpeg" alt="Andrés Orantes">
                         </div>
-                        <div class="btn-group">
-                            <a href="https://github.com/Equipo-MLOps-44/TC5061-Proyecto-Equipo44" target="_blank" rel="noopener noreferrer" class="action-link">GitHub Repo</a>
+                    </div>
+
+                    <div class="about-body">
+                        <div class="about-editorial">
+                            <p>
+                                I'm a <strong>Data Science and Mathematics engineer</strong> specialized in end-to-end data processing, analytics, and Machine Learning. With experience constructing efficient data pipelines and predictive models using <strong>Python, Pandas, and Scikit-Learn</strong>.
+                            </p>
+                            <p>
+                                I am constantly deepening my technical expertise by developing scalable, data-driven solutions.
+                            </p>
+                        </div>
+
+                        <!-- Personal "Currently" Strip (Edit your YouTube Music URL, track, and book below) -->
+                        <div class="currently-section">
+                            <div class="currently-label">Currently</div>
+                            <div class="currently-grid">
+                                <!-- Replace href with your specific YouTube Music track/album/playlist URL -->
+                                <a href="https://music.youtube.com/" target="_blank" rel="noopener noreferrer" class="currently-card currently-card--link">
+                                    <div class="currently-card-top">
+                                        <span class="currently-type">
+                                            <i class="fa-solid fa-headphones" aria-hidden="true"></i>
+                                            Listening
+                                        </span>
+                                        <span class="yt-music-badge">
+                                            <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+                                            YT Music &#8599;
+                                        </span>
+                                    </div>
+                                    <div class="currently-title">Color Your Night</div>
+                                    <div class="currently-subtitle">Persona 3 Reload OST</div>
+                                </a>
+
+                                <div class="currently-card">
+                                    <div class="currently-card-top">
+                                        <span class="currently-type">
+                                            <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                                            Reading
+                                        </span>
+                                    </div>
+                                    <div class="currently-title">Designing Machine Learning Systems</div>
+                                    <div class="currently-subtitle">Chip Huyen</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- PROJECT 1: Spotify Track Predictor (WIP) -->
-            <div class="project-card" onclick="openModal(this)">
-                <i class="fa-solid fa-music project-icon"></i>
-                <h3>Spotify Track Predictor</h3>
-                <p>Regression model for song popularity prediction.</p>
-                <span class="click-text">Click for details</span>
+        <div class="section-divider" aria-hidden="true"></div>
 
-                <!-- Contenido Oculto -->
-                <div class="project-details" style="display: none;">
-                    
-                    <!-- Imagen comentada como solicitaste -->
-                    <!-- <img src="Imagenes/spotify_project.png" alt="Spotify Project" onerror="this.src='https://via.placeholder.com/400x300?text=Spotify+Project'"> -->
-                    
-                    <!-- Ícono de reemplazo para el interior del modal -->
-                    <i class="fa-solid fa-music" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
-                    
-                    <div class="details-content">
-                        <h3>Spotify Track Popularity Predictor</h3>
-                        <p><strong>[Work in Progress]</strong> Supervised Machine Learning project using tabular audio features to predict song popularity on Spotify. The pipeline includes exploratory data analysis with profiling tools and the implementation of regression models.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">ydata-profiling</span>
-                            <span class="tech-tag">Pandas</span>
+        <!-- =========================================================
+             SECTION 3: EXPERIENCE (Hybrid E + F + G)
+             ========================================================= -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-heading">
+                    <span class="section-heading-slash" aria-hidden="true"></span>
+                    Experience
+                </h2>
+
+                <div class="experience-list">
+                    <!-- Role 1 -->
+                    <article class="exp-card">
+                        <div class="exp-header">
+                            <div class="exp-header-left">
+                                <span class="exp-slash" aria-hidden="true"></span>
+                                <h3 class="exp-role">Data Analyst / Data Engineer</h3>
+                            </div>
+
+                            <div class="exp-header-right">
+                                <span class="exp-period">Since June 2025</span>
+                                <span class="status-flat status-flat--cyan">Current</span>
+                            </div>
                         </div>
-                        <div class="btn-group">
-                            <a href="https://github.com/AndresOrantes/Spotify-Ranking-Prediction" target="_blank" class="action-link">GitHub Repo</a>
+
+                        <div class="exp-body">
+                            <div class="exp-bullets-col">
+                                <ul class="exp-bullets">
+                                    <li>Design and build robust data pipelines using Apache Airflow to feed the company's Dremio Data Lake.</li>
+                                    <li>Optimize data extraction and transformation workflows.</li>
+                                    <li>Migrated SQL queries to Python to run them on AWS Lambda, improving efficiency and maintainability.</li>
+                                    <li>Tuning Machine Learning regression model, Prophet, to generate better demand forecasts.</li>
+                                </ul>
+                            </div>
+
+                            <div class="exp-stack-col">
+                                <div class="exp-stack-label">Core Stack</div>
+                                <div class="tech-stack">
+                                    <span class="tech-chip">Python</span>
+                                    <span class="tech-chip">SQL</span>
+                                    <span class="tech-chip">Apache Airflow</span>
+                                    <span class="tech-chip">AWS Lambda</span>
+                                    <span class="tech-chip">AWS S3</span>
+                                    <span class="tech-chip">Dremio</span>
+                                    <span class="tech-chip">DataHub</span>
+                                    <span class="tech-chip">Pandas</span>
+                                    <span class="tech-chip">Prophet</span>
+                                    <span class="tech-chip">ETL</span>
+                                </div>
+                            </div>
                         </div>
+                    </article>
+
+                    <!-- Role 2 -->
+                    <article class="exp-card">
+                        <div class="exp-header">
+                            <div class="exp-header-left">
+                                <span class="exp-slash" aria-hidden="true"></span>
+                                <h3 class="exp-role">Data Analyst</h3>
+                            </div>
+
+                            <div class="exp-header-right">
+                                <span class="exp-period">August 2023 &mdash; June 2025</span>
+                            </div>
+                        </div>
+
+                        <div class="exp-body">
+                            <div class="exp-bullets-col">
+                                <ul class="exp-bullets">
+                                    <li>Management and analysis of large-scale databases using Excel and SAP.</li>
+                                    <li>Generated key reports on payroll, recruitment, organizational structure, and academic profiles.</li>
+                                    <li>Automated Excel reports with VBA scripting.</li>
+                                    <li>Optimized Google Looker Studio dashboards.</li>
+                                </ul>
+                            </div>
+
+                            <div class="exp-stack-col">
+                                <div class="exp-stack-label">Core Stack</div>
+                                <div class="tech-stack">
+                                    <span class="tech-chip">Excel</span>
+                                    <span class="tech-chip">SAP</span>
+                                    <span class="tech-chip">Looker Studio</span>
+                                    <span class="tech-chip">VBA</span>
+                                    <span class="tech-chip">Data Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <!-- =========================================================
+             SECTION 4: PROJECTS (Compact Concept A + Scale & Cyan Light)
+             ========================================================= -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-heading">
+                    <span class="section-heading-slash" aria-hidden="true"></span>
+                    Projects
+                </h2>
+
+                <div class="projects-grid">
+
+                    <!-- PROJECT 1: MiBici MLOps Platform -->
+                    <article
+                        class="project-card"
+                        tabindex="0"
+                        role="button"
+                        data-title="MiBici End-to-End MLOps Platform"
+                        data-category="MLOps &amp; Forecasting"
+                        data-status=""
+                        data-icon="fa-solid fa-bicycle"
+                        data-repo="https://github.com/Equipo-MLOps-44/TC5061-Proyecto-Equipo44"
+                        data-stack="Python,MLflow,Scikit-Learn,Pandas,FastAPI,Podman,Docker Compose,DeepChecks,Evidently,Locust,Pytest,uv"
+                    >
+                        <div class="project-stage">
+                            <span class="project-category">MLOps &amp; Forecasting</span>
+                            <i class="fa-solid fa-bicycle project-stage-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">MiBici MLOps Platform</h3>
+                            <p class="project-summary">End-to-end MLOps pipeline for bike-share demand forecasting and serving.</p>
+                            <div class="project-preview-tags">
+                                <span class="tech-chip tech-chip--subtle">Python</span>
+                                <span class="tech-chip tech-chip--subtle">MLflow</span>
+                                <span class="tech-chip tech-chip--subtle">FastAPI</span>
+                                <span class="tech-chip tech-chip--subtle">+9</span>
+                            </div>
+                            <div class="project-footer">
+                                <span>View details</span>
+                                <span aria-hidden="true">&rarr;</span>
+                            </div>
+                        </div>
+                        <div class="project-details" hidden>
+                            <p>End-to-end MLOps capstone project built on 24 months of open mobility data from Guadalajara's <strong>MiBici</strong> bike-sharing system (<strong>9M+ trips</strong>, <strong>6.6M+ hourly station records</strong>, and <strong>472 station profiles</strong>). Built reproducible Parquet pipelines with <strong>SHA-256 data versioning</strong> and trained models across three tasks: hourly demand forecasting (<strong>Random Forest</strong> &amp; <strong>LinearSVR</strong>), station rebalancing risk classification, and station usage segmentation (<strong>K-Means</strong> &amp; <strong>GMM</strong>), with experiment tracking, nested hyperparameter search, and <strong>Champion/Challenger A/B testing</strong> in <strong>MLflow</strong>.</p>
+                            <p>Automated data integrity and drift monitoring using <strong>DeepChecks</strong> and <strong>Evidently</strong>, alongside <strong>Pytest</strong> test suites and <code>pip-audit</code> security audits. Deployed real-time inference endpoints with <strong>FastAPI</strong> and <strong>Pydantic</strong>, containerized via <strong>Podman</strong> and <strong>Docker Compose</strong>, load-tested with <strong>Locust</strong> (up to 250 concurrent users and 121 req/s with 0% errors across 4 workers), and evaluated with a <strong>FinOps</strong> cloud cost analysis comparing AWS EC2 and Google Cloud Run.</p>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2: Spotify Track Predictor -->
+                    <article
+                        class="project-card"
+                        tabindex="0"
+                        role="button"
+                        data-title="Spotify Track Popularity Predictor"
+                        data-category="Supervised ML"
+                        data-status="WIP"
+                        data-icon="fa-solid fa-music"
+                        data-repo="https://github.com/AndresOrantes/Spotify-Ranking-Prediction"
+                        data-stack="Python,Scikit-Learn,ydata-profiling,Pandas"
+                    >
+                        <div class="project-stage">
+                            <span class="project-category">Supervised ML</span>
+                            <span class="project-status">WIP</span>
+                            <i class="fa-solid fa-music project-stage-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Spotify Track Predictor</h3>
+                            <p class="project-summary">Regression model for song popularity prediction.</p>
+                            <div class="project-preview-tags">
+                                <span class="tech-chip tech-chip--subtle">Python</span>
+                                <span class="tech-chip tech-chip--subtle">Scikit-Learn</span>
+                                <span class="tech-chip tech-chip--subtle">ydata-profiling</span>
+                                <span class="tech-chip tech-chip--subtle">+1</span>
+                            </div>
+                            <div class="project-footer">
+                                <span>View details</span>
+                                <span aria-hidden="true">&rarr;</span>
+                            </div>
+                        </div>
+                        <div class="project-details" hidden>
+                            <p><strong>[Work in Progress]</strong> Supervised Machine Learning project using tabular audio features to predict song popularity on Spotify. The pipeline includes exploratory data analysis with profiling tools and the implementation of regression models.</p>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3: Hotel Occupancy ML (NDA) -->
+                    <article
+                        class="project-card"
+                        tabindex="0"
+                        role="button"
+                        data-title="Hotel Occupancy Predictor (TCA Software Solutions)"
+                        data-category="Deep Learning &middot; Azure"
+                        data-status="NDA"
+                        data-icon="fa-solid fa-hotel"
+                        data-private="true"
+                        data-stack="PyTorch,Azure,Kedro,Docker,Streamlit"
+                    >
+                        <div class="project-stage">
+                            <span class="project-category">Deep Learning &middot; Azure</span>
+                            <span class="project-status">NDA</span>
+                            <i class="fa-solid fa-hotel project-stage-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Hotel Occupancy ML</h3>
+                            <p class="project-summary">End-to-end LSTM model and Azure cloud deployment.</p>
+                            <div class="project-preview-tags">
+                                <span class="tech-chip tech-chip--subtle">PyTorch</span>
+                                <span class="tech-chip tech-chip--subtle">Azure</span>
+                                <span class="tech-chip tech-chip--subtle">Kedro</span>
+                                <span class="tech-chip tech-chip--subtle">+2</span>
+                            </div>
+                            <div class="project-footer">
+                                <span>View details</span>
+                                <span aria-hidden="true">&rarr;</span>
+                            </div>
+                        </div>
+                        <div class="project-details" hidden>
+                            <p>End-to-end mathematical engineering project to estimate hotel room occupancy. Executed comprehensive data governance and EDA (confirming time-series stationarity via Augmented Dickey-Fuller). Built a robust <strong>LSTM Recurrent Neural Network</strong> with Huber Loss and Layer Normalization using PyTorch. The workflow was automated via <strong>Kedro</strong>, containerized with <strong>Docker</strong>, and deployed as a real-time inference endpoint on <strong>Azure Container Apps</strong>.</p>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 4: LLM RAG for CVs -->
+                    <article
+                        class="project-card hidden-project"
+                        tabindex="0"
+                        role="button"
+                        data-title="Retrieval-Augmented Generation for CVs"
+                        data-category="Applied NLP / LLM"
+                        data-status="WIP"
+                        data-icon="fa-solid fa-file-pdf"
+                        data-repo="https://github.com/AndresOrantes"
+                        data-stack="LLMs,Vector DB,Python,NLP"
+                    >
+                        <div class="project-stage">
+                            <span class="project-category">Applied NLP / LLM</span>
+                            <span class="project-status">WIP</span>
+                            <i class="fa-solid fa-file-pdf project-stage-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">LLM RAG for CVs</h3>
+                            <p class="project-summary">Intelligent resume search and extraction system.</p>
+                            <div class="project-preview-tags">
+                                <span class="tech-chip tech-chip--subtle">LLMs</span>
+                                <span class="tech-chip tech-chip--subtle">Vector DB</span>
+                                <span class="tech-chip tech-chip--subtle">Python</span>
+                                <span class="tech-chip tech-chip--subtle">+1</span>
+                            </div>
+                            <div class="project-footer">
+                                <span>View details</span>
+                                <span aria-hidden="true">&rarr;</span>
+                            </div>
+                        </div>
+                        <div class="project-details" hidden>
+                            <p><strong>[Work in Progress]</strong> RAG system designed to process resumes, generate embeddings, and store them in a vector database. It enables natural language querying through an LLM to automatically extract and summarize key candidate information.</p>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 5: London Weather ML -->
+                    <article
+                        class="project-card hidden-project"
+                        tabindex="0"
+                        role="button"
+                        data-title="London Weather Forecasting Pipeline"
+                        data-category="Modular ML"
+                        data-status="WIP"
+                        data-icon="fa-solid fa-cloud-sun"
+                        data-repo="https://github.com/AndresOrantes/london_weather_ml"
+                        data-stack="Python,OOP,Scikit-Learn,MLOps"
+                    >
+                        <div class="project-stage">
+                            <span class="project-category">Modular ML</span>
+                            <span class="project-status">WIP</span>
+                            <i class="fa-solid fa-cloud-sun project-stage-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">London Weather ML</h3>
+                            <p class="project-summary">Modularized ML pipeline for weather forecasting.</p>
+                            <div class="project-preview-tags">
+                                <span class="tech-chip tech-chip--subtle">Python</span>
+                                <span class="tech-chip tech-chip--subtle">OOP</span>
+                                <span class="tech-chip tech-chip--subtle">Scikit-Learn</span>
+                                <span class="tech-chip tech-chip--subtle">+1</span>
+                            </div>
+                            <div class="project-footer">
+                                <span>View details</span>
+                                <span aria-hidden="true">&rarr;</span>
+                            </div>
+                        </div>
+                        <div class="project-details" hidden>
+                            <p><strong>[Work in Progress]</strong> An end-to-end Machine Learning project focused on weather forecasting. Built using Object-Oriented Programming (OOP) principles, the architecture features modularized components (such as custom data loaders and preprocessors), utilizing Scikit-Learn pipelines and modern package management via <code>uv</code>.</p>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 6: Framework-less ML -->
+                    <article
+                        class="project-card hidden-project"
+                        tabindex="0"
+                        role="button"
+                        data-title="Framework-less ML &amp; GPA Predictor"
+                        data-category="Core Math &amp; Algorithms"
+                        data-status=""
+                        data-icon="fa-solid fa-book"
+                        data-repo="https://github.com/AndresOrantes/Portafolio_1_Mod2"
+                        data-stack="Python,Mathematics,Algorithms,Data Analysis"
+                    >
+                        <div class="project-stage">
+                            <span class="project-category">Core Math &amp; Algorithms</span>
+                            <i class="fa-solid fa-book project-stage-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Framework-less ML</h3>
+                            <p class="project-summary">Custom ML algorithms for academic and demographic prediction.</p>
+                            <div class="project-preview-tags">
+                                <span class="tech-chip tech-chip--subtle">Python</span>
+                                <span class="tech-chip tech-chip--subtle">Mathematics</span>
+                                <span class="tech-chip tech-chip--subtle">Algorithms</span>
+                                <span class="tech-chip tech-chip--subtle">+1</span>
+                            </div>
+                            <div class="project-footer">
+                                <span>View details</span>
+                                <span aria-hidden="true">&rarr;</span>
+                            </div>
+                        </div>
+                        <div class="project-details" hidden>
+                            <p>Implementation of Machine Learning techniques entirely from scratch without relying on high-level frameworks. It includes a custom interactive script (<code>GPAPredicyourGrade</code>) to estimate student GPA and a gender classification model. The project highlights a deep understanding of core mathematical mechanics, feature influence, and model performance evaluation based on data distribution constraints.</p>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 7: Titanic ML Predictor -->
+                    <article
+                        class="project-card hidden-project"
+                        tabindex="0"
+                        role="button"
+                        data-title="Titanic Survival Prediction"
+                        data-category="Classification &amp; EDA"
+                        data-status=""
+                        data-icon="fa-solid fa-ship"
+                        data-repo="https://github.com/AndresOrantes/Reto_Titanic_Equipo5"
+                        data-stack="Python,Scikit-Learn,Pandas,EDA"
+                    >
+                        <div class="project-stage">
+                            <span class="project-category">Classification &amp; EDA</span>
+                            <i class="fa-solid fa-ship project-stage-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Titanic Predictor</h3>
+                            <p class="project-summary">Survival prediction using classification models.</p>
+                            <div class="project-preview-tags">
+                                <span class="tech-chip tech-chip--subtle">Python</span>
+                                <span class="tech-chip tech-chip--subtle">Scikit-Learn</span>
+                                <span class="tech-chip tech-chip--subtle">Pandas</span>
+                                <span class="tech-chip tech-chip--subtle">+1</span>
+                            </div>
+                            <div class="project-footer">
+                                <span>View details</span>
+                                <span aria-hidden="true">&rarr;</span>
+                            </div>
+                        </div>
+                        <div class="project-details" hidden>
+                            <p>End-to-end Machine Learning project aimed at predicting passenger survival on the Titanic. The workflow involves extensive Exploratory Data Analysis (EDA), feature engineering, and the training of classification algorithms.</p>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 8: Olympics Query Tool -->
+                    <article
+                        class="project-card hidden-project"
+                        tabindex="0"
+                        role="button"
+                        data-title="Olympics Statistics Query System"
+                        data-category="Data Automation"
+                        data-status=""
+                        data-icon="fa-solid fa-medal"
+                        data-repo="https://github.com/AndresOrantes/Olimpiadas_PS"
+                        data-stack="Python,Data Analysis,Scripting"
+                    >
+                        <div class="project-stage">
+                            <span class="project-category">Data Automation</span>
+                            <i class="fa-solid fa-medal project-stage-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Olympics Query Tool</h3>
+                            <p class="project-summary">Python script for historical statistics extraction.</p>
+                            <div class="project-preview-tags">
+                                <span class="tech-chip tech-chip--subtle">Python</span>
+                                <span class="tech-chip tech-chip--subtle">Data Analysis</span>
+                                <span class="tech-chip tech-chip--subtle">Scripting</span>
+                            </div>
+                            <div class="project-footer">
+                                <span>View details</span>
+                                <span aria-hidden="true">&rarr;</span>
+                            </div>
+                        </div>
+                        <div class="project-details" hidden>
+                            <p>A Python-based scripting tool designed to query, extract, and analyze historical statistics from the Olympic Games. Built to facilitate efficient data retrieval and automated statistical processing.</p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="section-more-wrap">
+                    <button id="seeMoreProjectsBtn" type="button" class="btn btn--secondary">
+                        <span id="seeMoreProjectsLabel">See All Projects (8)</span>
+                        <i id="seeMoreProjectsChevron" class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <!-- =========================================================
+             SECTION 5: EDUCATION (Refined Concept 4 Editorial Timeline)
+             ========================================================= -->
+        <section id="education" class="section">
+            <div class="container container--medium">
+                <h2 class="section-heading">
+                    <span class="section-heading-slash" aria-hidden="true"></span>
+                    Education
+                </h2>
+
+                <div class="education-list">
+                    <!-- Master's Degree -->
+                    <article class="edu-entry">
+                        <div class="edu-gutter">
+                            <div class="edu-period">Aug 2025 &mdash; Jul 2027</div>
+                            <span class="status-flat status-flat--cyan">In Progress</span>
+                        </div>
+
+                        <div class="edu-content">
+                            <span class="edu-tick" aria-hidden="true"></span>
+                            <div class="edu-header">
+                                <h3 class="edu-degree">Master in Applied Artificial Intelligence</h3>
+                                <a href="https://samp.itesm.mx/Programas/VistaPrograma?clave=MNA25L&modoVista=Default&idioma=ES&cols=0" target="_blank" rel="noopener noreferrer" class="edu-samp-link">
+                                    Study Plan (SAMP) <span aria-hidden="true">&rarr;</span>
+                                </a>
+                            </div>
+                            <div class="edu-institution">Tec de Monterrey</div>
+
+                            <div class="edu-courses-panel">
+                                <div class="edu-course-row">
+                                    <div class="edu-course-name">Machine Learning Ops (MLOps)</div>
+                                    <div class="edu-chip-group">
+                                        <span class="edu-chip edu-chip--cyan">Docker</span>
+                                        <span class="edu-chip edu-chip--cyan">Podman</span>
+                                        <span class="edu-chip edu-chip--cyan">MLflow</span>
+                                        <span class="edu-chip edu-chip--cyan">FastAPI</span>
+                                        <span class="edu-chip edu-chip--cyan">DeepChecks</span>
+                                        <span class="edu-chip edu-chip--cyan">Evidently</span>
+                                        <span class="edu-chip edu-chip--cyan">Locust</span>
+                                        <span class="edu-chip edu-chip--cyan">Pytest</span>
+                                        <span class="edu-chip edu-chip--cyan">A/B Testing</span>
+                                        <span class="edu-chip edu-chip--cyan">FinOps</span>
+                                    </div>
+                                </div>
+
+                                <div class="edu-course-row">
+                                    <div class="edu-course-name">Computer Vision</div>
+                                    <div class="edu-chip-group">
+                                        <span class="edu-chip edu-chip--sky">PyTorch</span>
+                                        <span class="edu-chip edu-chip--sky">OpenCV</span>
+                                    </div>
+                                </div>
+
+                                <div class="edu-course-row">
+                                    <div class="edu-course-name">Big Data</div>
+                                    <div class="edu-chip-group">
+                                        <span class="edu-chip edu-chip--indigo">PySpark</span>
+                                        <span class="edu-chip edu-chip--indigo">MLlib</span>
+                                    </div>
+                                </div>
+
+                                <div class="edu-course-row">
+                                    <div class="edu-course-name">Natural Language Processing</div>
+                                    <div class="edu-chip-group">
+                                        <span class="edu-chip edu-chip--indigo">Hugging Face</span>
+                                        <span class="edu-chip edu-chip--indigo">Regex</span>
+                                        <span class="edu-chip edu-chip--indigo">RAG</span>
+                                    </div>
+                                </div>
+
+                                <div class="edu-course-row">
+                                    <div class="edu-course-name">Artificial Intelligence &amp; Machine Learning</div>
+                                    <div class="edu-chip-group">
+                                        <span class="edu-chip edu-chip--cyan">Scikit-Learn</span>
+                                        <span class="edu-chip edu-chip--cyan">Pandas</span>
+                                        <span class="edu-chip edu-chip--cyan">Regression</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Bachelor's Degree -->
+                    <article class="edu-entry">
+                        <div class="edu-gutter">
+                            <div class="edu-period">Aug 2021 &mdash; Jun 2025</div>
+                            <span class="status-flat status-flat--graduated">Graduated</span>
+                        </div>
+
+                        <div class="edu-content">
+                            <span class="edu-tick" aria-hidden="true"></span>
+                            <div class="edu-header">
+                                <h3 class="edu-degree">B.S. in Data Science and Mathematics Engineering</h3>
+                                <a href="https://samp.itesm.mx/Programas/VistaPrograma?clave=IDM19&modoVista=Default&idioma=ES&cols=0" target="_blank" rel="noopener noreferrer" class="edu-samp-link">
+                                    Study Plan (SAMP) <span aria-hidden="true">&rarr;</span>
+                                </a>
+                            </div>
+                            <div class="edu-institution">Tec de Monterrey</div>
+
+                            <div class="edu-courses-panel">
+                                <div class="edu-course-row">
+                                    <div class="edu-course-name">Core Foundations</div>
+                                    <div class="edu-chip-group">
+                                        <span class="edu-chip edu-chip--sky">Statistics</span>
+                                        <span class="edu-chip edu-chip--sky">Data Sciences</span>
+                                        <span class="edu-chip edu-chip--sky">Machine Learning</span>
+                                        <span class="edu-chip edu-chip--sky">Applied Maths</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <!-- =========================================================
+             SECTION 6: CONTINUING EDUCATION (Concept C Wireframe + Filters + See More)
+             To add a new credential, paste a new <article class="wire-cell"> block
+             with data-type="track|course|cert" and data-skills="Skill 1,Skill 2".
+             Filters, counts, and pagination update automatically.
+             ========================================================= -->
+        <section id="continuined" class="section">
+            <div class="container">
+                <div class="cert-header-bar">
+                    <h2 class="section-heading">
+                        <span class="section-heading-slash" aria-hidden="true"></span>
+                        Continuing Education
+                    </h2>
+
+                    <div id="certTypeFilters" class="filter-bar" role="group" aria-label="Filter by credential type"></div>
+                </div>
+
+                <div class="skill-filter-bar">
+                    <span class="skill-filter-label">Skills:</span>
+                    <div id="certSkillFilters" class="skill-filter-pills" role="group" aria-label="Filter by skill"></div>
+                </div>
+
+                <div id="continuingEdGrid" class="wire-grid">
+
+                    <!-- CREDENTIAL 1: Image Processing -->
+                    <article class="wire-cell" data-type="track" data-skills="Python,Computer Vision,Deep Learning">
+                        <div class="wire-meta">
+                            <span class="wire-year">2026</span>
+                            <span class="wire-type wire-type--track">Skill Track</span>
+                        </div>
+                        <h3 class="wire-title">Image Processing</h3>
+                        <div class="wire-issuer">DataCamp</div>
+                        <p class="wire-desc">Finished Image Processing skill track (12 hrs). Covers image pre-processing, biomedical image analysis, and convolutional neural networks with Keras.</p>
+                        <div class="wire-skills"></div>
+
+                        <div class="wire-courses">
+                            <ul class="wire-course-list">
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/image-processing-in-python" target="_blank" rel="noopener noreferrer">Image Processing in Python &#8599;</a>
+                                    <span>4 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/biomedical-image-analysis-in-python" target="_blank" rel="noopener noreferrer">Biomedical Image Analysis in Python &#8599;</a>
+                                    <span>4 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/image-modeling-with-keras" target="_blank" rel="noopener noreferrer">Image Modeling with Keras &#8599;</a>
+                                    <span>4 hr</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="wire-footer">
+                            <button type="button" class="wire-toggle" aria-expanded="false">+ 3 Courses</button>
+                            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/b26ee55e75908d7082c01a620254e80f5835a905" target="_blank" rel="noopener noreferrer" class="wire-link">View Certificate &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- CREDENTIAL 2: Associate Python Developer -->
+                    <article class="wire-cell" data-type="track" data-skills="Python,Software Eng">
+                        <div class="wire-meta">
+                            <span class="wire-year">2026</span>
+                            <span class="wire-type wire-type--track">Career Track</span>
+                        </div>
+                        <h3 class="wire-title">Associate Python Developer</h3>
+                        <div class="wire-issuer">DataCamp</div>
+                        <p class="wire-desc">Finished Python developer track. Includes Regex, Decorators, OOP, Data Types, and Shell workflows.</p>
+                        <div class="wire-skills"></div>
+
+                        <div class="wire-courses">
+                            <ul class="wire-course-list">
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/introduction-to-python-for-developers" target="_blank" rel="noopener noreferrer">Introduction to Python for Developers &#8599;</a>
+                                    <span>3 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/intermediate-python-for-developers" target="_blank" rel="noopener noreferrer">Intermediate Python for Developers &#8599;</a>
+                                    <span>2 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/python-toolbox" target="_blank" rel="noopener noreferrer">Python Toolbox &#8599;</a>
+                                    <span>4 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/data-types-in-python" target="_blank" rel="noopener noreferrer">Data Types in Python &#8599;</a>
+                                    <span>4 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/working-with-dates-and-times-in-python" target="_blank" rel="noopener noreferrer">Working with Dates and Times in Python &#8599;</a>
+                                    <span>4 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/regular-expressions-in-python" target="_blank" rel="noopener noreferrer">Regular Expressions in Python &#8599;</a>
+                                    <span>4 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/introduction-to-object-oriented-programming-in-python" target="_blank" rel="noopener noreferrer">Introduction to OOP in Python &#8599;</a>
+                                    <span>3 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/introduction-to-shell" target="_blank" rel="noopener noreferrer">Introduction to Shell &#8599;</a>
+                                    <span>4 hr</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="wire-footer">
+                            <button type="button" class="wire-toggle" aria-expanded="false">+ 8 Courses</button>
+                            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/e3ebc5213884d85f2c57135d64e2de9f82e03797" target="_blank" rel="noopener noreferrer" class="wire-link">View Certificate &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- CREDENTIAL 3: Git Fundamentals -->
+                    <article class="wire-cell" data-type="track" data-skills="Git &amp; DevOps,Software Eng">
+                        <div class="wire-meta">
+                            <span class="wire-year">2025</span>
+                            <span class="wire-type wire-type--track">Skill Track</span>
+                        </div>
+                        <h3 class="wire-title">Git Fundamentals</h3>
+                        <div class="wire-issuer">DataCamp</div>
+                        <p class="wire-desc">Finished Git track. Includes version control introduction and repository managing.</p>
+                        <div class="wire-skills"></div>
+
+                        <div class="wire-courses">
+                            <ul class="wire-course-list">
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/introduction-to-git" target="_blank" rel="noopener noreferrer">Introduction to Git &#8599;</a>
+                                    <span>2 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/intermediate-git" target="_blank" rel="noopener noreferrer">Intermediate Git &#8599;</a>
+                                    <span>2 hr</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.datacamp.com/courses/advanced-git" target="_blank" rel="noopener noreferrer">Advanced Git &#8599;</a>
+                                    <span>3 hr</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="wire-footer">
+                            <button type="button" class="wire-toggle" aria-expanded="false">+ 3 Courses</button>
+                            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/4292efc029fcc685826cea05c01fe2f652239d51" target="_blank" rel="noopener noreferrer" class="wire-link">View Certificate &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- CREDENTIAL 4: MLOps Concepts -->
+                    <article class="wire-cell" data-type="course" data-skills="MLOps,Machine Learning">
+                        <div class="wire-meta">
+                            <span class="wire-year">2026</span>
+                            <span class="wire-type wire-type--course">Course</span>
+                        </div>
+                        <h3 class="wire-title">MLOps Concepts</h3>
+                        <div class="wire-issuer">DataCamp</div>
+                        <p class="wire-desc">Introduction to MLOps Concepts which includes data versioning and machine learning models life cycle.</p>
+                        <div class="wire-skills"></div>
+
+                        <div class="wire-footer wire-footer--end">
+                            <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/5a491f2ee258997cf2262eb4000d23eac7183b1e" target="_blank" rel="noopener noreferrer" class="wire-link">View Certificate &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- CREDENTIAL 5: Ciencia de datos -->
+                    <article class="wire-cell" data-type="cert" data-skills="Data Science,Python">
+                        <div class="wire-meta">
+                            <span class="wire-year">2025</span>
+                            <span class="wire-type wire-type--cert">Certification</span>
+                        </div>
+                        <h3 class="wire-title">Certificado de Alta Especialidad: Ciencia de datos</h3>
+                        <div class="wire-issuer">Tecnológico de Monterrey</div>
+                        <p class="wire-desc">The participant acquires abilities to become a Data Scientist. Leverages enterprise information for better decision-making and strategic improvement.</p>
+                        <div class="wire-skills"></div>
+
+                        <div class="wire-footer wire-footer--end">
+                            <a href="https://www.credential.net/f8933002-7aed-452a-bb8f-de41ee853532#acc.wlV3z5Sx" target="_blank" rel="noopener noreferrer" class="wire-link">View Credential &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- CREDENTIAL 6: Visualización de datos -->
+                    <article class="wire-cell" data-type="cert" data-skills="Data Viz,Data Science">
+                        <div class="wire-meta">
+                            <span class="wire-year">2025</span>
+                            <span class="wire-type wire-type--cert">Certification</span>
+                        </div>
+                        <h3 class="wire-title">Certificado de Alta Especialidad: Visualización de datos</h3>
+                        <div class="wire-issuer">Tecnológico de Monterrey</div>
+                        <p class="wire-desc">The participant uses best practices to present information and knowledge to decision takers using a visualization tool.</p>
+                        <div class="wire-skills"></div>
+
+                        <div class="wire-footer wire-footer--end">
+                            <a href="https://www.credential.net/7939ff86-ce90-4b25-a473-337e916a4311#acc.CtnFbmf7" target="_blank" rel="noopener noreferrer" class="wire-link">View Credential &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- CREDENTIAL 7: IA y Aprendizaje Automático -->
+                    <article class="wire-cell" data-type="cert" data-skills="Machine Learning,Data Science">
+                        <div class="wire-meta">
+                            <span class="wire-year">2025</span>
+                            <span class="wire-type wire-type--cert">Certification</span>
+                        </div>
+                        <h3 class="wire-title">Certificado de Alta Especialidad: Inteligencia artificial y aprendizaje automático</h3>
+                        <div class="wire-issuer">Tecnológico de Monterrey</div>
+                        <p class="wire-desc">The participant applies the principal Machine Learning related techniques in real life problems.</p>
+                        <div class="wire-skills"></div>
+
+                        <div class="wire-footer wire-footer--end">
+                            <a href="https://www.credential.net/031468e9-cc11-45fc-adf7-621b13690e31#acc.EIir3RYH" target="_blank" rel="noopener noreferrer" class="wire-link">View Credential &rarr;</a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div id="continuingEdEmpty" class="cert-empty" hidden>
+                    <p>No credentials match that type and skill combination.</p>
+                    <button id="resetCertFiltersBtn" type="button" class="btn btn--compact">Reset Filters</button>
+                </div>
+
+                <div id="continuingEdMoreWrap" class="section-more-wrap">
+                    <button id="seeMoreCertsBtn" type="button" class="btn btn--secondary">
+                        <span id="seeMoreCertsLabel">See More Credentials</span>
+                        <i id="seeMoreCertsChevron" class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider" aria-hidden="true"></div>
+
+        <!-- =========================================================
+             SECTION 7: CONTACT & FOOTER
+             ========================================================= -->
+        <section id="contact" class="section section--contact">
+            <div class="container container--narrow">
+                <div class="contact-panel">
+                    <h2 class="contact-title">Contact Me</h2>
+                    <p class="contact-desc">
+                        Want to talk about a project, data pipeline, or role? Feel free to reach out directly.
+                    </p>
+
+                    <div class="contact-actions">
+                        <a href="mailto:jagorantes10@gmail.com?subject=Contacto%20desde%20Portafolio" class="btn">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            Send Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/andres-orantes/" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+                            LinkedIn <span aria-hidden="true">&#8599;</span>
+                        </a>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- PROJECT: TCA Software Solutions (PRIVADO / NDA) -->
-            <div class="project-card" onclick="openModal(this)">
-                <i class="fa-solid fa-hotel project-icon"></i>
-                <h3>Hotel Occupancy ML</h3>
-                <p>End-to-end LSTM model and Azure cloud deployment.</p>
-                <span class="click-text">Click for details</span>
-                
-                <div class="project-details" style="display: none;">
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#continuined">Continuing Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <p class="copyright">&copy; 2026 Andrés Orantes. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </main>
 
-                    <i class="fa-solid fa-hotel project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
-                    <!-- IMAGEN DEL PROYECTO-->
-                    <!--<img src="Imagenes/placeholder.png" alt="TCA Software Solutions" onerror="this.src='https://via.placeholder.com/400x300?text=TCA+Software+Solutions'">-->
-                    <div class="details-content">
-                        <h3>Hotel Occupancy Predictor (TCA Software Solutions)</h3>
-                        <p>End-to-end mathematical engineering project to estimate hotel room occupancy. Executed comprehensive data governance and EDA (confirming time-series stationarity via Augmented Dickey-Fuller). Built a robust <strong>LSTM Recurrent Neural Network</strong> with Huber Loss and Layer Normalization using PyTorch. The workflow was automated via <strong>Kedro</strong>, containerized with <strong>Docker</strong>, and deployed as a real-time inference endpoint on <strong>Azure Container Apps</strong>.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">Azure</span>
-                            <span class="tech-tag">Kedro</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">Streamlit</span>
+    <!-- =========================================================
+         PROJECT DETAIL MODAL (Glassmorphism + Geometric Unmask)
+         ========================================================= -->
+    <div id="projectModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div id="modalFrame" class="modal-frame">
+            <div class="modal-panel">
+                <div class="modal-topbar">
+                    <div class="modal-topbar-meta">
+                        <span class="modal-slash" aria-hidden="true"></span>
+                        <span id="modalCategoryTop" class="modal-category-top"></span>
+                        <span id="modalStatusBadge" class="modal-status-badge" hidden></span>
+                    </div>
+
+                    <button id="closeModalBtn" type="button" class="modal-close" aria-label="Close modal">
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="modal-grid">
+                    <!-- Left Column: Project Icon/Image + Tech Stack -->
+                    <div class="modal-visual-col">
+                        <div class="modal-icon-box">
+                            <i id="modalIcon" class="fa-solid fa-bicycle" aria-hidden="true"></i>
+                            <span id="modalCategory" class="modal-icon-caption"></span>
                         </div>
-                        <div class="btn-group">
-                            <!-- Botón inactivo visualmente para indicar que es privado por NDA -->
-                            <span class="action-link" style="opacity: 0.5; cursor: not-allowed; border-color: rgba(255,255,255,0.2);">
-                                <i class="fa-solid fa-lock" style="margin-right: 0.5rem;"></i>Private Repository (NDA)
-                            </span>
+
+                        <div class="modal-stack-box">
+                            <div class="modal-stack-label">Tech Stack</div>
+                            <div id="modalTechStack" class="tech-stack"></div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Title, Description, Repo CTA & Prev/Next -->
+                    <div class="modal-detail-col">
+                        <h3 id="modalTitle" class="modal-title"></h3>
+                        <div id="modalDescription" class="modal-description"></div>
+
+                        <div class="modal-actions-row">
+                            <div id="modalActionArea"></div>
+
+                            <div class="modal-nav-group">
+                                <button id="prevProjectBtn" type="button" class="modal-nav-btn">&larr; Prev</button>
+                                <button id="nextProjectBtn" type="button" class="modal-nav-btn">Next &rarr;</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- PROJECT 2: LLM RAG for CVs (WIP) -->
-            <div class="project-card hidden-project" onclick="openModal(this)">
-                <i class="fa-solid fa-file-pdf project-icon"></i>
-                <h3>LLM RAG for CVs</h3>
-                <p>Intelligent resume search and extraction system.</p>
-                <span class="click-text">Click for details</span>
-                
-                <div class="project-details" style="display: none;">
-
-                    <i class="fa-solid fa-file-pdf project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
-                    <!--IMAGEN DEL PROYECTO COMENTADA-->
-                    <!-- <img src="Imagenes/rag_project.png" alt="RAG Project" onerror="this.src='https://via.placeholder.com/400x300?text=RAG+Project'"> -->
-                    <div class="details-content">
-                        <h3>Retrieval-Augmented Generation for CVs</h3>
-                        <p><strong>[Work in Progress]</strong> RAG system designed to process resumes, generate embeddings, and store them in a vector database. It enables natural language querying through an LLM to automatically extract and summarize key candidate information.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">LLMs</span>
-                            <span class="tech-tag">Vector DB</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">NLP</span>
-                        </div>
-                        <div class="btn-group">
-                            <a href="#" target="_blank" class="action-link">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PROJECT: London Weather ML (WIP) -->
-            <div class="project-card hidden-project" onclick="openModal(this)">
-                <i class="fa-solid fa-cloud-sun project-icon"></i>
-                <h3>London Weather ML</h3>
-                <p>Modularized ML pipeline for weather forecasting.</p>
-                <span class="click-text">Click for details</span>
-                
-                <div class="project-details" style="display: none;">
-                    
-                    <!-- Ícono decorativo para el interior del modal -->
-                    <i class="fa-solid fa-cloud-sun" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
-                    
-                    <div class="details-content">
-                        <h3>London Weather Forecasting Pipeline</h3>
-                        <p><strong>[Work in Progress]</strong> An end-to-end Machine Learning project focused on weather forecasting. Built using Object-Oriented Programming (OOP) principles, the architecture features modularized components (such as custom data loaders and preprocessors), utilizing Scikit-learn pipelines and modern package management via <code>uv</code>.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">OOP</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">MLOps</span>
-                        </div>
-                        <div class="btn-group">
-                            <a href="https://github.com/AndresOrantes/london_weather_ml" target="_blank" class="action-link">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- PROJECT: Framework-less ML (COMPLETADO) -->
-            <div class="project-card hidden-project" onclick="openModal(this)">
-                <i class="fa-solid fa-book project-icon"></i>
-                <h3>Framework-less ML</h3>
-                <p>Custom ML algorithms for academic and demographic prediction.</p>
-                <span class="click-text">Click for details</span>
-                
-                <div class="project-details" style="display: none;">
-
-                    <i class="fa-solid fa-hotel project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
-                    <!--IMAGEN DEL PROYECTO-->
-                    <!--<img src="Imagenes/placeholder.png" alt="ML from scratch" onerror="this.src='https://via.placeholder.com/400x300?text=ML+From+Scratch'">-->
-                    <div class="details-content">
-                        <h3>Framework-less ML & GPA Predictor</h3>
-                        <p>Implementation of Machine Learning techniques entirely from scratch without relying on high-level frameworks. It includes a custom interactive script (<code>GPAPredicyourGrade</code>) to estimate student GPA and a gender classification model. The project highlights a deep understanding of core mathematical mechanics, feature influence, and model performance evaluation based on data distribution constraints.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Mathematics</span>
-                            <span class="tech-tag">Algorithms</span>
-                            <span class="tech-tag">Data Analysis</span>
-                        </div>
-                        <div class="btn-group">
-                            <a href="https://github.com/AndresOrantes/Portafolio_1_Mod2" target="_blank" class="action-link">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- PROJECT 4: Titanic ML Predictor (COMPLETADO / Oculto por defecto) -->
-            <div class="project-card hidden-project" onclick="openModal(this)">
-                <i class="fa-solid fa-ship project-icon"></i>
-                <h3>Titanic Predictor</h3>
-                <p>Survival prediction using classification models.</p>
-                <span class="click-text">Click for details</span>
-
-                
-                <div class="project-details" style="display: none;">
-                    <i class="fa-solid fa-ship project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
-                    <!--IMAGEN DEL PROYECTO-->
-                    <!--<img src="Imagenes/placeholder.png" alt="Titanic ML" onerror="this.src='https://via.placeholder.com/400x300?text=Titanic+Project'">-->
-                    <div class="details-content">
-                        <h3>Titanic Survival Prediction</h3>
-                        <p>End-to-end Machine Learning project aimed at predicting passenger survival on the Titanic. The workflow involves extensive Exploratory Data Analysis (EDA), feature engineering, and the training of classification algorithms.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Scikit-Learn</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">EDA</span>
-                        </div>
-                        <div class="btn-group">
-                            <a href="https://github.com/AndresOrantes/Reto_Titanic_Equipo5" target="_blank" class="action-link">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- PROJECT 6: Olympics Stats Tool (COMPLETADO / Oculto por defecto) -->
-            <div class="project-card hidden-project" onclick="openModal(this)">
-                <i class="fa-solid fa-medal project-icon"></i>
-                <h3>Olympics Query Tool</h3>
-                <p>Python script for historical statistics extraction.</p>
-                <span class="click-text">Click for details</span>
-                
-                <div class="project-details" style="display: none;">
-
-                    <i class="fa-solid fa-medal project-icon" style="font-size: 5rem; color: #38bdf8; display: block; text-align: center; margin: 2rem 0;"></i>
-                    <!--IMAGEN DEL PROYECTO-->
-                    <!--<img src="Imagenes/placeholder.png" alt="Olympics" onerror="this.src='https://via.placeholder.com/400x300?text=Olympics+Stats'">-->
-                    <div class="details-content">
-                        <h3>Olympics Statistics Query System</h3>
-                        <p>A Python-based scripting tool designed to query, extract, and analyze historical statistics from the Olympic Games. Built to facilitate efficient data retrieval and automated statistical processing.</p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Data Analysis</span>
-                            <span class="tech-tag">Scripting</span>
-                        </div>
-                        <div class="btn-group">
-                            <a href="https://github.com/AndresOrantes/Olimpiadas_PS" target="_blank" class="action-link">GitHub Repo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-        <button id="seeMoreBtn" class="btn see-more-btn">See More Projects</button>
-
-    </section>
-
-    <!-- ESTRUCTURA DE LA VENTANA EMERGENTE (MODAL) -->
-    <div id="projectModal" class="modal">
-        <div class="modal-box">
-            <span class="close-modal" onclick="closeModal()">&times;</span>
-            <div id="modalBody" class="modal-body">
-                <!-- El JS inyectará el contenido aquí -->
             </div>
         </div>
     </div>
 
-
-
-<!-- ==============================================
-         EDUCACIÓN FORMAL (Línea de tiempo + Minimalismo)
-    =============================================== -->
-    <section id="education" class="education-section">
-        <h2 class="section-title">Education</h2>
-
-        <div class="timeline-minimal">
-            
-            <!-- MAESTRÍA -->
-            <div class="timeline-item-minimal">
-                <div class="timeline-dot-minimal"></div>
-                
-                <span class="edu-date">August 2025 — July 2027</span>
-                <h3 class="edu-title">Master in Applied Artificial Intelligence</h3>
-                <div class="edu-institution">Tec de Monterrey</div>
-                
-                <div class="course-grid">
-                    <div class="course-name">Machine Learning Ops (MLOps)</div>
-                    <div class="tag-group">
-                        <span class="modern-tag">Docker</span>
-                        <span class="modern-tag">Podman</span>
-                        <span class="modern-tag">MLflow</span>
-                        <span class="modern-tag">FastAPI</span>
-                        <span class="modern-tag">DeepChecks</span>
-                        <span class="modern-tag">Evidently</span>
-                        <span class="modern-tag">Locust</span>
-                        <span class="modern-tag">Pytest</span>
-                        <span class="modern-tag">A/B Testing</span>
-                        <span class="modern-tag">FinOps</span>
-                    </div>
-                    
-                    <div class="course-name">Computer Vision</div>
-                    <div class="tag-group">
-                        <span class="modern-tag">PyTorch</span>
-                        <span class="modern-tag">OpenCV</span>
-                    </div>
-
-                    <div class="course-name">Big Data</div>
-                    <div class="tag-group">
-                        <span class="modern-tag">PySpark</span>
-                        <span class="modern-tag">MLlib</span>
-                    </div>
-
-                    <div class="course-name">Natural Language Processing</div>
-                    <div class="tag-group">
-                        <span class="modern-tag">Hugging Face</span>
-                        <span class="modern-tag">Regex</span>
-                        <span class="modern-tag">RAG</span>
-                    </div>
-
-                    <div class="course-name">Artificial Intelligence and Machine Learning</div>
-                    <div class="tag-group">
-                        <span class="modern-tag">Scikit-Learn</span>
-                        <span class="modern-tag">Pandas</span>
-                        <span class="modern-tag">Regression</span>
-                    </div>
-                </div>
-
-                <a href="https://samp.itesm.mx/Programas/VistaPrograma?clave=MNA25L&modoVista=Default&idioma=ES&cols=0" target="_blank" class="modern-link">View Study Plan (SAMP) &rarr;</a>
-            </div>
-
-            <!-- INGENIERÍA -->
-            <div class="timeline-item-minimal">
-                <div class="timeline-dot-minimal"></div>
-                
-                <span class="edu-date">August 2021 — June 2025</span>
-                <h3 class="edu-title">B.S. in Data Science and Mathematics Engineering</h3>
-                <div class="edu-institution">Tec de Monterrey</div>
-                
-                <div class="course-grid">
-                    <div class="course-name">Core Foundations</div>
-                    <div class="tag-group">
-                        <span class="modern-tag">Statistics</span>
-                        <span class="modern-tag">Data Sciences</span>
-                        <span class="modern-tag">Machine Learning</span>
-                        <span class="modern-tag">Applied Maths</span>
-                    </div>
-                </div>
-                <a href="https://samp.itesm.mx/Programas/VistaPrograma?clave=IDM19&modoVista=Default&idioma=ES&cols=0" target="_blank" class="modern-link">View Study Plan (SAMP) &rarr;</a>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ==============================================
-         EDUCACIÓN CONTINUA (Tarjetas Editoriales)
-    =============================================== -->
-    <section id="continuined" class="cert-section">
-        <h2 class="section-title">Continuing Education</h2>
-        
-        <div class="editorial-grid">
-            
-            <!-- TARJETA: Image Processing -->
-            <div class="editorial-card">
-                <div class="card-meta">
-                    <span class="meta-year">2026</span>
-                    <span class="meta-type type-track">SKILL TRACK</span>
-                </div>
-                <h3 class="card-title">Image Processing</h3>
-                <div class="card-issuer">DataCamp</div>
-                <p class="card-desc">Finished Image Processing skill track (12 hrs). Covers image pre-processing, biomedical image analysis, and convolutional neural networks with Keras.</p>
-                <div class="track-courses">
-                    <span class="track-courses-label">Courses Completed</span>
-                    <ul class="track-course-list">
-                        <li>
-                            <a href="https://www.datacamp.com/courses/image-processing-in-python" target="_blank" rel="noopener noreferrer" class="track-course-link">Image Processing in Python</a>
-                            <span class="track-course-hours">4 hr</span>
-                        </li>
-                        <li>
-                            <a href="https://www.datacamp.com/courses/biomedical-image-analysis-in-python" target="_blank" rel="noopener noreferrer" class="track-course-link">Biomedical Image Analysis in Python</a>
-                            <span class="track-course-hours">4 hr</span>
-                        </li>
-                        <li>
-                            <a href="https://www.datacamp.com/courses/image-modeling-with-keras" target="_blank" rel="noopener noreferrer" class="track-course-link">Image Modeling with Keras</a>
-                            <span class="track-course-hours">4 hr</span>
-                        </li>
-                    </ul>
-                </div>
-                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/b26ee55e75908d7082c01a620254e80f5835a905" target="_blank" class="action-link">View Certificate</a>
-            </div>
-
-            <!-- TARJETA 1 -->
-            <div class="editorial-card">
-                <div class="card-meta">
-                    <span class="meta-year">2026</span>
-                    <span class="meta-type type-track">CAREER TRACK</span>
-                </div>
-                <h3 class="card-title">Associate Python Developer</h3>
-                <div class="card-issuer">DataCamp</div>
-                <p class="card-desc">Finished python developer track. Includes Regex, Decorators, OOP and Data types.</p>
-                <div class="track-courses">
-                    <span class="track-courses-label">Courses Completed (8)</span>
-                    <ul class="track-course-list">
-                        <li>
-                            <a href="https://www.datacamp.com/courses/introduction-to-python-for-developers" target="_blank" rel="noopener noreferrer" class="track-course-link">Introduction to Python for Developers</a>
-                            <span class="track-course-hours">3 hr</span>
-                        </li>
-                        <li>
-                            <a href="https://www.datacamp.com/courses/intermediate-python-for-developers" target="_blank" rel="noopener noreferrer" class="track-course-link">Intermediate Python for Developers</a>
-                            <span class="track-course-hours">2 hr</span>
-                        </li>
-                        <li>
-                            <a href="https://www.datacamp.com/courses/python-toolbox" target="_blank" rel="noopener noreferrer" class="track-course-link">Python Toolbox</a>
-                            <span class="track-course-hours">4 hr</span>
-                        </li>
-                        <li class="track-course-extra">
-                            <a href="https://www.datacamp.com/courses/data-types-in-python" target="_blank" rel="noopener noreferrer" class="track-course-link">Data Types in Python</a>
-                            <span class="track-course-hours">4 hr</span>
-                        </li>
-                        <li class="track-course-extra">
-                            <a href="https://www.datacamp.com/courses/working-with-dates-and-times-in-python" target="_blank" rel="noopener noreferrer" class="track-course-link">Working with Dates and Times in Python</a>
-                            <span class="track-course-hours">4 hr</span>
-                        </li>
-                        <li class="track-course-extra">
-                            <a href="https://www.datacamp.com/courses/regular-expressions-in-python" target="_blank" rel="noopener noreferrer" class="track-course-link">Regular Expressions in Python</a>
-                            <span class="track-course-hours">4 hr</span>
-                        </li>
-                        <li class="track-course-extra">
-                            <a href="https://www.datacamp.com/courses/introduction-to-object-oriented-programming-in-python" target="_blank" rel="noopener noreferrer" class="track-course-link">Introduction to Object-Oriented Programming in Python</a>
-                            <span class="track-course-hours">3 hr</span>
-                        </li>
-                        <li class="track-course-extra">
-                            <a href="https://www.datacamp.com/courses/introduction-to-shell" target="_blank" rel="noopener noreferrer" class="track-course-link">Introduction to Shell</a>
-                            <span class="track-course-hours">4 hr</span>
-                        </li>
-                    </ul>
-                    <button type="button" class="track-courses-toggle" aria-expanded="false">
-                        <span class="toggle-text">See 5 more courses</span>
-                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/e3ebc5213884d85f2c57135d64e2de9f82e03797" target="_blank" class="action-link">View Certificate</a>
-            </div>
-
-            <!-- TARJETA 1 -->
-            <div class="editorial-card">
-                <div class="card-meta">
-                    <span class="meta-year">2025</span>
-                    <span class="meta-type type-track">SKILL TRACK</span>
-                </div>
-                <h3 class="card-title">Git Fundamentals</h3>
-                <div class="card-issuer">DataCamp</div>
-                <p class="card-desc">Finished Git track. Includes version control introduction and repository managing.</p>
-                <div class="track-courses">
-                    <span class="track-courses-label">Courses Completed</span>
-                    <ul class="track-course-list">
-                        <li>
-                            <a href="https://www.datacamp.com/courses/introduction-to-git" target="_blank" rel="noopener noreferrer" class="track-course-link">Introduction to Git</a>
-                            <span class="track-course-hours">2 hr</span>
-                        </li>
-                        <li>
-                            <a href="https://www.datacamp.com/courses/intermediate-git" target="_blank" rel="noopener noreferrer" class="track-course-link">Intermediate Git</a>
-                            <span class="track-course-hours">2 hr</span>
-                        </li>
-                        <li>
-                            <a href="https://www.datacamp.com/courses/advanced-git" target="_blank" rel="noopener noreferrer" class="track-course-link">Advanced Git</a>
-                            <span class="track-course-hours">3 hr</span>
-                        </li>
-                    </ul>
-                </div>
-                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/track/4292efc029fcc685826cea05c01fe2f652239d51" target="_blank" class="action-link">View Certificate</a>
-            </div>
-
-            <!-- TARJETA 2 -->
-            <div class="editorial-card">
-                <div class="card-meta">
-                    <span class="meta-year">2026</span>
-                    <span class="meta-type type-course">COURSE</span>
-                </div>
-                <h3 class="card-title">MLOps Concepts</h3>
-                <div class="card-issuer">DataCamp</div>
-                <p class="card-desc">Introduction to MLOps Concepts which includes data versioning and machine learning models life cycle.</p>
-                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/5a491f2ee258997cf2262eb4000d23eac7183b1e" target="_blank" class="action-link">View Certificate</a>
-            </div>
-
-
-            <!-- TARJETAS DE CERTIFICADOS TEC -->
-            <div class="editorial-card">
-                <div class="card-meta">
-                    <span class="meta-year">2025</span>
-                    <span class="meta-type type-cert">CERTIFICATION</span>
-                </div>
-                <h3 class="card-title">Certificado de Alta Especialidad: Ciencia de datos</h3>
-                <div class="card-issuer">Tecnológico de Monterrey</div>
-                <p class="card-desc">The participant acquires abilities to become a Data Scientist. Leverages the volume of information generated regarding the company for better decision-making and strategic improvement.</p>
-                <a href="https://www.credential.net/f8933002-7aed-452a-bb8f-de41ee853532#acc.wlV3z5Sx" target="_blank" class="action-link">View Credential</a>
-            </div>
-
-            <div class="editorial-card">
-                <div class="card-meta">
-                    <span class="meta-year">2025</span>
-                    <span class="meta-type type-cert">CERTIFICATION</span>
-                </div>
-                <h3 class="card-title">Certificado de Alta Especialidad: Visualización de datos</h3>
-                <div class="card-issuer">Tecnológico de Monterrey</div>
-                <p class="card-desc">The participant uses best practices to present information and knowledge to decision takers using a visualization tool.</p>
-                <a href="https://www.credential.net/7939ff86-ce90-4b25-a473-337e916a4311#acc.CtnFbmf7" target="_blank" class="action-link">View Credential</a>
-            </div>
-
-            <div class="editorial-card">
-                <div class="card-meta">
-                    <span class="meta-year">2025</span>
-                    <span class="meta-type type-cert">CERTIFICATION</span>
-                </div>
-                <h3 class="card-title">Certificado de Alta Especialidad: Inteligencia artificial y aprendizaje automático</h3>
-                <div class="card-issuer">Tecnológico de Monterrey</div>
-                <p class="card-desc">The participant applies the principal Machine Learning related techniques in real life problems.</p>
-                <a href="https://www.credential.net/031468e9-cc11-45fc-adf7-621b13690e31#acc.EIir3RYH" target="_blank" class="action-link">View Credential</a>
-            </div>
-
-
-            <!-- TARJETA 3 -->
-            <!--
-            <div class="editorial-card">
-                <div class="card-meta">
-                    <span class="meta-year">2025</span>
-                    <span class="meta-type type-cert">CERTIFICATION</span>
-                </div>
-                <h3 class="card-title">Microsoft Power Automate</h3>
-                <div class="card-issuer">Microsoft Learn</div>
-                <p class="card-desc">Automatización de flujos de trabajo empresariales y optimización de procesos repetitivos.</p>
-                <a href="#" target="_blank" class="action-link">View Credential</a>
-            </div>
-            -->
-        </div>
-    </section>
-
-    
-
-    <section class="contact" id="contact">
-        <h2 class="section-title">Contact Me</h2>
-        
-        <div class="contact-container">
-            <p class="contact-desc">
-                Click here if you want to contact me.
-            </p>
-
-            <a href="mailto:jagorantes10@gmail.com?subject=Contacto%20desde%20Portafolio" class="mailto-btn">
-                <i class="fa-solid fa-envelope"></i> Send Email
-            </a>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <ul class="footer-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#continuined">Continuing Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <p class="copyright">© 2026 | Andres Orantes. All Rights Reserved.</p>
-    </footer>
-
-
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=3"></script>
 </body>
 </html>
